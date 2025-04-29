@@ -25,16 +25,16 @@
 <body class="h-screen w-screen overflow-hidden">
 
   <!-- Flex container with column layout on small screens (mobile) and row layout on larger screens -->
-  <div class="flex flex-col sm:flex-row h-full w-full">
-    
+  <div class="flex flex-col sm:flex-row h-full">
+
     <!-- Professional Side -->
     <div onclick="location.href='professional.html'"
-         class="w-full sm:w-1/2 slide group"
+         class="w-full sm:w-1/2 slide group flex-1 h-full"
          style="background-image: url('src/professional.jpg');">
       
       <div class="absolute inset-0 bg-black bg-opacity-60 overlay transition duration-300"></div>
 
-      <div class="relative z-10 h-full flex flex-col justify-center items-center text-white px-6 content transition-all duration-300 ease-in-out opacity-90">
+      <div class="relative z-10 flex flex-col justify-center items-center h-full text-white px-6 content transition-all duration-300 ease-in-out opacity-90">
         <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center group-hover:text-white transition duration-300">Isuru Gunathilaka</h1>
         <h2 class="text-xl mb-4 text-center group-hover:text-white transition duration-300">Systems Engineer at GC Technology</h2>
         <p class="text-center max-w-md mb-6 group-hover:text-white transition duration-300">Passionate about delivering scalable and secure systems. Experienced in cloud, backend, and DevOps solutions.</p>
@@ -47,12 +47,12 @@
 
     <!-- Fun/Travel Side -->
     <div onclick="location.href='places.html'"
-         class="w-full sm:w-1/2 slide group"
+         class="w-full sm:w-1/2 slide group flex-1 h-full"
          style="background-image: url('src/travel.jpg'); filter: brightness(0.7);"> <!-- Apply brightness filter -->
 
       <div class="absolute inset-0 bg-white bg-opacity-40 overlay transition duration-300"></div>
 
-      <div class="relative z-10 h-full flex flex-col justify-center items-center text-gray-900 px-6 content transition-all duration-300 ease-in-out opacity-90">
+      <div class="relative z-10 flex flex-col justify-center items-center h-full text-gray-900 px-6 content transition-all duration-300 ease-in-out opacity-90">
         <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center group-hover:text-white transition duration-300">Outside the Office</h1>
         <p class="text-center max-w-md mb-6 group-hover:text-white transition duration-300">
           I love exploring new cultures, hiking trails, and finding the best local food. Life is best lived with adventure and curiosity.
@@ -68,3 +68,4 @@
 
 </body>
 </html>
+
