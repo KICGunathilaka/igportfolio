@@ -23,11 +23,13 @@
   </style>
 </head>
 <body class="h-screen w-screen overflow-hidden">
-  <div class="flex h-full w-full">
 
+  <!-- Flex container with column layout on small screens (mobile) and row layout on larger screens -->
+  <div class="flex flex-col sm:flex-row h-full w-full">
+    
     <!-- Professional Side -->
     <div onclick="location.href='professional.html'"
-         class="w-1/2 slide group"
+         class="w-full sm:w-1/2 slide group"
          style="background-image: url('src/professional.jpg');">
       
       <div class="absolute inset-0 bg-black bg-opacity-60 overlay transition duration-300"></div>
@@ -43,24 +45,26 @@
       </div>
     </div>
 
-<!-- Fun/Travel Side -->
-<div onclick="location.href='places.html'"
-     class="w-1/2 slide group"
-     style="background-image: url('src/travel.jpg'); filter: brightness(0.7);"> <!-- Apply brightness filter -->
+    <!-- Fun/Travel Side -->
+    <div onclick="location.href='places.html'"
+         class="w-full sm:w-1/2 slide group"
+         style="background-image: url('src/travel.jpg'); filter: brightness(0.7);"> <!-- Apply brightness filter -->
 
-  <div class="absolute inset-0 bg-white bg-opacity-40 overlay transition duration-300"></div>
+      <div class="absolute inset-0 bg-white bg-opacity-40 overlay transition duration-300"></div>
 
-  <div class="relative z-10 h-full flex flex-col justify-center items-center text-gray-900 px-6 content transition-all duration-300 ease-in-out opacity-90">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center group-hover:text-white transition duration-300">Outside the Office</h1>
-    <p class="text-center max-w-md mb-6 group-hover:text-white transition duration-300">
-      I love exploring new cultures, hiking trails, and finding the best local food. Life is best lived with adventure and curiosity.
-    </p>
-    <div class="flex space-x-4">
-      <span class="px-4 py-2 bg-pink-500 text-white rounded-lg">Instagram</span>
-      <span class="px-4 py-2 bg-gray-800 text-white rounded-lg">Places Visited</span>
+      <div class="relative z-10 h-full flex flex-col justify-center items-center text-gray-900 px-6 content transition-all duration-300 ease-in-out opacity-90">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center group-hover:text-white transition duration-300">Outside the Office</h1>
+        <p class="text-center max-w-md mb-6 group-hover:text-white transition duration-300">
+          I love exploring new cultures, hiking trails, and finding the best local food. Life is best lived with adventure and curiosity.
+        </p>
+        <div class="flex space-x-4">
+          <span class="px-4 py-2 bg-pink-500 text-white rounded-lg">Instagram</span>
+          <span class="px-4 py-2 bg-gray-800 text-white rounded-lg">Places Visited</span>
+        </div>
+      </div>
     </div>
+
   </div>
-</div>
 
 </body>
 </html>
